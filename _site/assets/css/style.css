@@ -244,7 +244,7 @@ footer { width: 170px; float: left; position: fixed; bottom: 10px; padding-left:
 @media print { body { padding: 0.4in; font-size: 12pt; color: #444; } }
 header { width: 240px; padding: 34px 0px 22px 25px; margin: 30px 25px 0 0; }
 
-header li { width: 142px; font-size: 16px; }
+header li { width: 165px; font-size: 16px; margin-bottom: 15px; padding: 10px; }
 
 header p { line-height: 1.3em; }
 
@@ -252,19 +252,25 @@ img { border: none; margin-bottom: 10px; margin-left: 0px; padding-bottom: 1px; 
 
 table { border: none; border-collapse: collapse; margin-bottom: 32px; text-align: left; font-size: 19px; }
 
+#dataDownload { text-align: right; }
+
 tr:nth-child(n) { border-top: solid  #fff; border-bottom: solid  #fff; }
 
 th { text-align: center; background-color: #f0eeeb; color: #232323; border-right: none; font-size: 19px; }
 
 td { background-color: #fffcf1; color: #232323; }
 
+td:nth-child(1) { text-align: left; }
+
 td:nth-child(2) { text-align: center; }
+
+code, pre { line-height: 1.5em; }
 
 .wrapper { width: 1280px; }
 
 section { width: 970px; }
 
-body { font-size: 20px; line-height: 1.5em; }
+body { font-size: 19px; line-height: 1.5em; }
 
 footer { font-size: 16px; line-height: 1.4em; }
 

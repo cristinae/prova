@@ -10,8 +10,10 @@ header {
 }
 
 header li {
-  width:142px;
+  width:165px;
   font-size: 16px;
+  margin-bottom: 15px;
+  padding: 10px;
 }
 
 header p {
@@ -33,6 +35,10 @@ table {
   font-size: 19px;
  }
 
+#dataDownload {
+  text-align: right;
+}
+
 tr:nth-child(n) { 
    border-top: solid  #fff; 
    border-bottom: solid  #fff; 
@@ -44,17 +50,24 @@ th {
   border-right: none;
   font-size: 19px;
  }
-
 td {
   background-color: #fffcf1;
   color:#232323;
+ }
+td:nth-child(1) {
+  text-align: left;
  }
 td:nth-child(2) {
   text-align: center;
  }
  
+
+code, pre {
+  line-height: 1.5em;
+}
+
  
- .wrapper {
+.wrapper {
   width:1280px;
 }
 
@@ -63,7 +76,7 @@ section{
 
 }
 body {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.5em;
 }
 
