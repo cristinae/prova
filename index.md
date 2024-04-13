@@ -5,11 +5,17 @@
 layout: default
 ---
 
-# Elote, Choclo and Mazorca: on the Varieties of Spanish
+# Elote, Choclo and Mazorca: on the Varieties of Spanish {#intro}
 
 <p>Spanish is one of the most widespread languages in the world: it is official language in 20 countries and the second most-spoken native language. Its close contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other. Still, available corpora, and models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. </p>
 
-<table>
+**Figura de ejemplo**
+
+
+
+Tabla de ejemplo
+
+<table id=dataDownload>
 <thead>
   <tr>
     <th colspan="2"></th>
@@ -47,3 +53,5 @@ layout: default
 </tbody>
 </table>
 
+
+# Citation {#citations}

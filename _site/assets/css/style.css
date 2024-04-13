@@ -250,11 +250,11 @@ header p { line-height: 1.3em; }
 
 img { border: none; margin-bottom: 10px; margin-left: 0px; padding-bottom: 1px; }
 
-table { border: none; border-collapse: collapse; margin-bottom: 32px; text-align: left; }
+table { border: none; border-collapse: collapse; margin-bottom: 32px; text-align: left; font-size: 19px; }
 
 tr:nth-child(n) { border-top: solid  #fff; border-bottom: solid  #fff; }
 
-th { text-align: center; background-color: #f0eeeb; color: #232323; border-right: none; }
+th { text-align: center; background-color: #f0eeeb; color: #232323; border-right: none; font-size: 19px; }
 
 td { background-color: #fffcf1; color: #232323; }
 

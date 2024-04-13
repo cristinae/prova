@@ -30,6 +30,7 @@ table {
   border-collapse: collapse;
   margin-bottom: 32px;
   text-align: left;
+  font-size: 19px;
  }
 
 tr:nth-child(n) { 
@@ -41,6 +42,7 @@ th {
   background-color: #f0eeeb;
   color:#232323;
   border-right: none;
+  font-size: 19px;
  }
 
 td {
@@ -68,7 +70,8 @@ body {
 footer {
   font-size: 16px;
   line-height: 1.4em;
- }
+}
+  
 
 @media print, screen and (max-width: 1280px) {
 
@@ -83,11 +86,11 @@ footer {
     width:auto;
   }
 
-	footer {
-		border-top: 1px solid #ccc;
-		margin:0 84px 0 50px;
-		padding:0;
-	}
+  footer {
+     border-top: 1px solid #ccc;
+     margin:0 84px 0 50px;
+	padding:0;
+  }
 
   header {
     padding-right:320px;
