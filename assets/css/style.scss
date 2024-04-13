@@ -13,9 +13,11 @@ header li {
   width:142px;
   font-size: 16px;
 }
+
 header p {
   line-height: 1.3em;
 }
+
 img {
   border: none;
   margin-bottom: 10px;
@@ -23,7 +25,34 @@ img {
   padding-bottom: 1px;
 }
 
-.wrapper {
+table {
+  border: none;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  text-align: left;
+ }
+
+tr:nth-child(n) { 
+   border-top: solid  #fff; 
+   border-bottom: solid  #fff; 
+}
+th {
+  text-align: center;
+  background-color: #f0eeeb;
+  color:#232323;
+  border-right: none;
+ }
+
+td {
+  background-color: #fffcf1;
+  color:#232323;
+ }
+td:nth-child(2) {
+  text-align: center;
+ }
+ 
+ 
+ .wrapper {
   width:1280px;
 }
 
