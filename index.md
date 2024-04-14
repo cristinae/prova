@@ -7,7 +7,7 @@ layout: default
 
 # Elote, Choclo and Mazorca: on the Varieties of Spanish {#intro}
 
-<p>Spanish is one of the most widespread languages in the world: it is official language in 20 countries and the second most-spoken native language. Its close contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other. Still, available corpora, and models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. </p>
+<p>Spanish is one of the most widespread languages in the world: it is official language in 20 countries and the second most-spoken native language. Its contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other. Still, available corpora and models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. CEREAL aims at alleviating the situation by compilling documents from the Web with annotations for 24 countries of origin.</p>
 
 **Figura de ejemplo** no puedo hacerla grande
 
@@ -17,7 +17,29 @@ layout: default
 
 
 
-## Download the data 
+## Cultural effects in embeddings {#culture}
+
+<div class="row2cols">
+  <div class="column2cols" width="45%">
+  <img src="img/accsBLIbigEX_oscar.png"  width="380" title="Accuracy on BLI">
+  </div>
+  <div class="column2cols" width="40%">
+  This is not working. kk2 some more text goes here to chekc the columns, even more in this case
+  </div>
+</div>
+
+
+<div class="row2cols">
+  <div class="column2cols left">
+  <img src="img/es_cctld_es_esES_1_sizeff.png"  width="290" title="Size effect with the Spanish CAWEAT1 lists on Peninsular Spanish embeddings">
+  <img src="img/es_cctld_mx_esES_1_sizeff.png"  width="290" title="Size effect with the Mexican CAWEAT1 lists on Mexican Spanish embeddings">
+  </div>
+  <div class="column2cols right">
+  kk2 some more text goes here to chekc the columns
+  </div>
+</div>
+
+## Download the data {#data}
 
 **Tabla de ejemplo**
 
@@ -55,6 +77,9 @@ layout: default
     <td></td>
     <td></td>
     <td></td>
+  </tr>
+  <tr>
+    <td>All</td>    <td>all</td>    <td></td>    <td>--</td>    <td></td>    <td></td>    <td></td>    <td></td>
   </tr>
 </tbody>
 </table>

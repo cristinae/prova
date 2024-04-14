@@ -12,7 +12,7 @@ header {
 header li {
   width:165px;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 10px;
 }
 
@@ -61,11 +61,31 @@ td:nth-child(2) {
   text-align: center;
  }
  
+.column2cols {
+  float: left;
+}
+
+.left {
+  width: 65%;
+}
+
+.right {
+  width: 35%;
+}
+
+/* Clear floats after the columns */
+.row2cols:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
 
 code, pre {
   line-height: 1.5em;
 }
-
  
 .wrapper {
   width:1280px;
@@ -114,6 +134,11 @@ footer {
     margin:0 0 20px;
   }
 
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
   header a small {
     display:inline;
   }
