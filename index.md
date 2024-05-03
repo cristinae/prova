@@ -115,3 +115,17 @@ Please, use the following bibtex entries when citing this research work
 }
 ```
 
+```
+@InProceedings{espana-bonet-et-al-2024,
+    title = " When Elote, Choclo and Mazorca are not the Same. Isomorphism-based Perspective to the Spanish Varieties Divergences ",
+    author = "Espa{\~n}a-Bonet, Cristina and Bhatt, Ankur and Dutta Chowdhury, Koel and Barr{\'o}n-Cede{\~n}o, Alberto",
+    booktitle = "Proceedings of the eleventh Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/",
+    pages = "--"
+}
+```
+
