@@ -21,7 +21,7 @@
 {"@context":"https://schema.org","@type":"WebSite","description":"el Corpus del Español REAL","headline":"Elote, Choclo and Mazorca: on the Varieties of Spanish {#intro}","name":"corpus","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="/assets/css/style.css?v=b9c8e8b6b4397e6389dad938a270e1cc1376f094">
+    <link rel="stylesheet" href="/assets/css/style.css?v=160e206fdf36e25629f24227e3db014935995576">
     <script src="/assets/js/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -115,7 +115,7 @@
   <tr>
     <th colspan="2"></th>
     <th colspan="2">Document Level (#docs)</th>
-    <th colspan="2">Sentence Level (#sents) </th>
+    <th colspan="2">Fragment Level (#frags) </th>
     <th colspan="2">Embeddings (vocab)</th>
   </tr>
   <tr>
@@ -127,26 +127,274 @@
 </thead>
 <tbody>
   <tr>
-    <td>Andorra</td>    <td>ad</td>    <td><a href="https://zenodo.org/records/3829167/files/de.0.tar.bz2">1,551</a></td>    <td>--</td>    <td><a href="https://zenodo.org/records/3829167/files/de.0.tar.bz2">13,023</a></td>    <td>--</td>    <td>2,671</td>    <td>--</td>
+    <td>Andorra</td>
+    <td>ad</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.ad.bz2">1,551</a></td>
+    <td>&mdash; </td>
+    <td>13,023</td>
+    <td>&mdash; </td>
+    <td>2,672</td>
+    <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Argentina</td>  <td>ar</td>    <td><a href="https://zenodo.org/records/3829167/files/de.0.tar.bz2">1,969,559</a></td>    <td><a href="https://zenodo.org/records/3829167/files/de.0.tar.bz2">2,713,759</a></td>    <td>20,958,972</td>    <td>33,854,130</td>    <td>284,191</td>    <td>--</td>
+    <td>Argentina</td>
+    <td>ar</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.ar.bz2">1,969,559</a></td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.ar.bz2">2,713,759</a></td>
+    <td>20,958,972</td>
+    <td>33,854,130</td>
+    <td>284,192</td>
+    <td>532,890</td>
   </tr>
   <tr>
-    <td>Bolivia</td>    <td>bo</td>    <td>74,673</td>    <td>--</td>    <td></td>    <td></td>    <td></td>    <td></td>
+    <td>Bolivia</td>
+    <td>bo</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.bo.bz2">74,673</a></td>
+    <td>&mdash; </td>
+    <td>976,031</td>
+    <td>&mdash; </td>
+    <td>53,800</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Chile</td>
+    <td>cl</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.cl.bz2">1,115,516</a></td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.cl.bz2">1,095,185</a></td>
+    <td>12,100,443</td>
+    <td>10,077,118</td>
+    <td>199,494</td>
+    <td>307,846</td>
+  </tr>
+  <tr>
+    <td>Colombia</td>
+    <td>co</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.co.bz2">649,991</a></td>
+    <td>&mdash; </td>
+    <td>8,331,461</td>
+    <td>&mdash; </td>
+    <td>163,213</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Costa Rica</td>
+    <td>cr</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.cr.bz2">59,069</a></td>
+    <td>&mdash; </td>
+    <td>826,332</td>
+    <td>&mdash; </td>
+    <td>45,894</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Cuba</td>
+    <td>cu</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.cu.bz2">116,390</a></td>
+    <td>&mdash; </td>
+    <td>1,921,505</td>
+    <td>&mdash; </td>
+    <td>82,276</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>República Dominicana</td>
+    <td>do</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.do.bz2">113,676</a></td>
+    <td>&mdash; </td>
+    <td>1,184,014</td>
+    <td>&mdash; </td>
+    <td>52,410</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Ecuador</td>
+    <td>ec</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.ec.bz2">157,755</a></td>
+    <td>&mdash; </td>
+    <td>1,624,840</td>
+    <td>&mdash; </td>
+    <td>64,313</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>España</td>
+    <td>es</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.es.bz2">5,714,316</a></td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.es.bz2">15,689,557</a></td>
+    <td>70,458,818</td>
+    <td>192,199,885</td>
+    <td>596,843</td>
+    <td>1,428,724</td>
+  </tr>
+  <tr>
+    <td>Guinea Ecuatorial</td>
+    <td>gq</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.gq.bz2">801</a></td>
+    <td>&mdash; </td>
+    <td>4,055</td>
+    <td>&mdash; </td>
+    <td>1,699</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Guatemala</td>
+    <td>gt</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.gt.bz2">51,273</a></td>
+    <td>&mdash; </td>
+    <td>561,899</td>
+    <td>&mdash; </td>
+    <td>35,861</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Honduras</td>
+    <td>hn</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.hn.bz2">59,662</a></td>
+    <td>&mdash; </td>
+    <td>656,485</td>
+    <td>&mdash; </td>
+    <td>35,708</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>México</td>
+    <td>mx</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.mx.bz2">2,443,404</a></td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.mx.bz2">3,314,396</a></td>
+    <td>20,883,245</td>
+    <td>39,410,541</td>
+    <td>250,314</td>
+    <td>489,705</td>
+  </tr>
+  <tr>
+    <td>Nicaragua</td>
+    <td>ni</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.ni.bz2">36,880</a></td>
+    <td>&mdash; </td>
+    <td>405,986</td>
+    <td>&mdash; </td>
+    <td>31,346</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Panamá</td>
+    <td>pa</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.pa.bz2">39,027</a></td>
+    <td>&mdash; </td>
+    <td>449,172</td>
+    <td>&mdash; </td>
+    <td>31,269</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Perú</td>
+    <td>pe</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.pe.bz2">441,513</a></td>
+    <td>&mdash; </td>
+    <td>5,069,664</td>
+    <td>&mdash; </td>
+    <td>122,885</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Filipinas</td>
+    <td>ph</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.ph.bz2">109</a></td>
+    <td>&mdash; </td>
+    <td>&mdash; </td>
+    <td>&mdash; </td>
+    <td>406</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Puerto Rico</td>
+    <td>pr</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.pr.bz2">11,972</a></td>
+    <td>&mdash; </td>
+    <td>128,110</td>
+    <td>&mdash; </td>
+    <td>15,063</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Paraguay</td>
+    <td>py</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.py.bz2">66,438</a></td>
+    <td>&mdash; </td>
+    <td>775,578</td>
+    <td>&mdash; </td>
+    <td>46,514</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>El Salvador</td>
+    <td>sv</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.sv.bz2">41,037</a></td>
+    <td>&mdash; </td>
+    <td>401,553</td>
+    <td>&mdash; </td>
+    <td>29,434</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>United States</td>
+    <td>us</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.us.bz2">21,746</a></td>
+    <td>&mdash; </td>
+    <td>378,458</td>
+    <td>&mdash; </td>
+    <td>34,369</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Uruguay</td>
+    <td>uy</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.uy.bz2">153,713</a></td>
+    <td>&mdash; </td>
+    <td>1,805,013</td>
+    <td>&mdash; </td>
+    <td>75,492</td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>Venezuela</td>
+    <td>ve</td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.ve.bz2">109,084</a></td>
+    <td>&mdash; </td>
+    <td>1,202,227</td>
+    <td>&mdash; </td>
+    <td>59,335</td>
+    <td>&mdash; </td>
   </tr>
   <tr>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-    <td></td>
+    <td> </td>
     <td></td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>All</td>    <td>all</td>    <td></td>    <td>--</td>    <td></td>    <td></td>    <td></td>    <td></td>
+    <td>Mix</td>
+    <td>mix</td>
+    <td>&mdash; </td>
+    <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.mix.bz2">4,866,901</a></td>
+    <td>&mdash; </td>
+    <td>61,908,112</td>
+    <td>&mdash; </td>
+    <td>&mdash; </td>
+  </tr>
+  <tr>
+    <td>All</td>
+    <td>all</td>
+    <td>13,449,155</td>
+    <td>27,679,798</td>
+    <td>151,116,884</td>
+    <td>337,449,786</td>
+    <td>736,896</td>
+    <td>&mdash; </td>
   </tr>
 </tbody>
 </table>
@@ -155,7 +403,7 @@
 
 <h2 id="models">Download the models</h2>
 
-<p>The classification models trained with our document-level classifier are hosted by <a href="">HuggingFace</a>.</p>
+<p>The classification models trained with our document-level classifier are hosted by <a href="https://huggingface.co/cristinae/cereal">HuggingFace</a>.</p>
 
 <p>The table above links to the word embedding models per country and configuration. In order to reproduce the work in XXXX, we also provide embeddings to the 24 Spanish varieties with two additional seeds (<a href="">seed 2</a>, <a href="">seed 3</a>), and <a href="">five embedding models</a> for Peninsular Spanish differing in the training data.</p>
 
