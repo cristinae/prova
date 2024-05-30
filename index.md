@@ -7,41 +7,74 @@ layout: default
 
 # Elote, Choclo and Mazorca: on the Varieties of Spanish {#intro}
 
-<p>Spanish is one of the most widespread languages in the world: it is official language in 20 countries and the second most-spoken native language. Its contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other. Still, available corpora and models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. CEREAL aims at alleviating the situation by compilling documents from the Web with annotations for 24 countries of origin.</p>
+<p>Spanish is one of the most widespread languages in the world: it is official language in 20 countries and the second most-spoken native language. Its contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other. Still, available corpora and models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. CEREAL aims at alleviating the situation by compiling documents from the Web with annotations for 24 countries of origin.</p>
 
-**Figura de ejemplo** no puedo hacerla grande
-
-<p align="center">
-  <img src="img/spanish_speakers.png"  width="1000" title="Countries where Spanish is spoken">
+  
+<p align="center"> <img src="img/spanish_speakers_corpus.png" width="90%" alt="Countries where Spanish is spoken and the porportion of online data" title="Countries where Spanish is spoken"> 
+  <div class="caption" width="90%">
+  <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico is taken as unit measure: countries with a larger ration documents/population appear in orange, countries with a lower ratio show the superposition of bubbles. </div>
 </p>
 
 
+## Cultural effects in CEREAL embeddings {#culture}
 
-## Cultural effects in embeddings {#culture}
+<p> Different background culture, different lexicon and different grammatical structures present in the country-dependant textual corpora leave their imprint in semantic representations learned from them. This is evident when estimating the strength of biases (the size effect) and the performance in bilingual lexicon induction (accuracy in BLI). </p>
 
-<div class="row2cols">
-  <div class="column2cols" width="45%">
-  <img src="img/accsBLIbigEX_oscar.png"  width="380" title="Accuracy on BLI">
-  </div>
-  <div class="column2cols" width="40%">
-  This is not working. kk2 some more text goes here to chekc the columns, even more in this case
-  </div>
-</div>
-
+Human biases are non-pejorative indications of human preferences. Psychologists show through Implicit Association Tests (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house CA-WEAT tests and apply it to CEREAL embeddings \[1\].
 
 <div class="row2cols">
   <div class="column2cols left">
+  Embeddings+CA-WEATs from Spain: &emsp;&emsp;&emsp;&emsp; and from Mexico: 
   <img src="img/es_cctld_es_esES_1_sizeff.png"  width="290" title="Size effect with the Spanish CAWEAT1 lists on Peninsular Spanish embeddings">
-  <img src="img/es_cctld_mx_esES_1_sizeff.png"  width="290" title="Size effect with the Mexican CAWEAT1 lists on Mexican Spanish embeddings">
+  <img src="img/es_cctld_mx_esMX_1_sizeff.png"  width="290" title="Size effect with the Mexican CAWEAT1 lists on Mexican Spanish embeddings">
   </div>
   <div class="column2cols right">
-  kk2 some more text goes here to chekc the columns
+  <br><br><br>
+   <div class="caption" width="90%"> <b>Figure 2.</b> These results for IAT1 (flowers vs insects preference) show that the bias is stronger in Spain than in Mexico. The difference might have cultural reasons behind (some insects being edible in Mexico and not in Spain for instance) and it would be diluted when considering the texts from Spain and Mexico together.</div>
   </div>
 </div>
 
-## Download the data {#data}
+<br>
+Lexicon might be very different in different Spanish-speaking countries. <em>Elote</em>, <em>choclo</em> and <em>mazorca</em>  all mean "corn" in different regions. The word itself has a different usage, being much more frequent in America than in Europe. This behaviour makes the topology of the embedding spaces different \[2\] and therefore relevant for NLP tasks such as bilingual lexicon induction \[1\].
 
-**Tabla de ejemplo**
+<p align="center"> 
+Mexico: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+Chile: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+Spain: <br>
+<img src="img/mx_elote10_big.png" width="25%" alt="mx"> &emsp;&emsp;
+<img src="img/cl_choclo10_big.png" width="25%" alt="cl"> &emsp;&emsp;
+<img src="img/es_mazorca10_big.png" width="25%" alt="es"> 
+  <div class="caption">
+   <p width="90%"> <b>Figure 3.</b> The Spanish words equivalent to "corn" differ across countries and also do the neighbouring words and their relations.</p> </div>
+</p>
+
+Induction of the VARILEX word dictionaries with VecMap on CEREAL embeddings [1]: <br>
+<div class="row2cols">
+  <div class="column2cols left">
+  <p align="center"><img src="img/accsBLIbigEX_oscar.png"  width="400"  alt="Accuracy on BLI" title="Accuracy on BLI"></p>
+  </div>
+  <div class="column2cols right">
+  <br>
+  <div class="caption">  <b>Figure 4.</b> Chosing the embedding space corresponding to the variety of the dictionary we want to induce achieves the highest accuracy, even higher than using the embeddings build with all the available data in any Spanish variety (<em>all</em>). </div>
+  </div>
+</div>
+
+<br>
+The topology of the embedding spaces is different enough so that distances between the spaces allow us to infer differences (and similarities) among varieties. We estimate the distances with several isomorphism metrics and derive dendograms showing the proximity of the varieties \[2\].
+
+<div class="row2cols">
+  <div class="column2cols left">
+  <p align="center"><img src="img/visualDendo_cereal.png"  width="500"  alt="Dendogram visualisation" title="Dendogram visualisation"></p>
+  <p align="center"><img src="img/ev_freq100_17langs_cores.png"  width="500"  alt="Dendogram with EV (100 freq) metric" title="Dendogram with EV (100 freq) metric"></p>
+  </div>
+  <div class="column2cols right">
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="caption"> <b>Figure 5.</b> The figure shows the (visual) dendogram obtained with the scores given by the Eigenvalue similarity metric applied on every pair of varieties. According to these results, <em>voseo</em> is the strongest characteristic derived from the CEREAL word embeddings. </div>
+  </div>
+</div>
+
+
+## Download the data {#data}
 
 <table id=dataDownload>
 <thead>
@@ -338,7 +371,7 @@ The table above shows the statistics (number of documents and unique sentences p
 
 The classification models trained with our document-level classifier are hosted by [HuggingFace](https://huggingface.co/cristinae/cereal). 
 
-The table above links to the word embedding models per country and configuration. In order to reproduce the work in XXXX, we also provide embeddings to the 24 Spanish varieties with two additional seeds ([seed 2](), [seed 3]()), and [five embedding models]() for Peninsular Spanish differing in the training data.
+The table above links to the word embedding models per country and configuration. In order to reproduce the work in \[2\], we also provide embeddings to the 24 Spanish varieties with two additional seeds ([seed 2](), [seed 3]()), and [five embedding models]() for Peninsular Spanish differing in the training data.
 
 ## Download the code {#code}
 
@@ -347,13 +380,17 @@ Visit the Github repositories containing the code for the [document level classi
 
 ## Citations {#citations}
 
-Please, use the following bibtex entries when citing this research work
+Please, use the following entries when citing this research work.
+
+<div class="citeAPA">
+[1] Cristina España-Bonet and Alberto Barrón-Cedeño. Elote, Choclo and Mazorca: on the Varieties of Spanish. <em>In proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL’24)</em>. Mexico City, Mexico, June 2024.
+</div>
 
 ```
 @InProceedings{espana-bonet-barron-cedeno-2024,
     title = "Elote, Choclo and Mazorca: on the Varieties of Spanish",
     author = "Espa{\~n}a-Bonet, Cristina  and  Barr{\'o}n-Cede{\~n}o, Alberto",
-    booktitle = "Proceedings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics",
+    booktitle = "Proceedings of the 2024 Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)",
     month = jun,
     year = "2024",
     address = "Mexico City, Mexico",
@@ -362,6 +399,10 @@ Please, use the following bibtex entries when citing this research work
     pages = "--"
 }
 ```
+
+<div class="citeAPA">
+[2] Cristina España-Bonet, Ankur Bhatt, Koel Dutta Chowdhury and Alberto Barrón-Cedeño. When Elote, Choclo and Mazorca are not the Same. Isomorphism-Based Perspective to the Spanish Varieties Divergences. <em> In proceedings of the Eleventh Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial’24)</em>. Mexico City, Mexico, June 2024.
+</div>
 
 ```
 @InProceedings{espana-bonet-et-al-2024,

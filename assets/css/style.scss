@@ -81,8 +81,24 @@ td:nth-child(2) {
   clear: both;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0px solid #555;
+  margin-top: 20px;
+}
 
+.caption {
+  line-height: 1.1em;
+  font-size: 17px;
+  text-align: center;
+}
 
+.citeAPA {
+  line-height: 1.2em;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
 code, pre {
   line-height: 1.5em;
