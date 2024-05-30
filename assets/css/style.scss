@@ -39,6 +39,10 @@ table {
   text-align: right;
 }
 
+#dataTrainDownload {
+  max-width: 60%;
+}
+
 tr:nth-child(n) { 
    border-top: solid  #fff; 
    border-bottom: solid  #fff; 
@@ -89,9 +93,11 @@ img {
 }
 
 .caption {
+  max-width: 90%;
   line-height: 1.1em;
   font-size: 17px;
   text-align: center;
+  margin-left: 5%;
 }
 
 .citeAPA {

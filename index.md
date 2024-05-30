@@ -5,22 +5,27 @@
 layout: default
 ---
 
-# Elote, Choclo and Mazorca: on the Varieties of Spanish {#intro}
+# Elote, Choclo and Mazorca: on the Varieties of Spanish
 
 <p>Spanish is one of the most widespread languages in the world: it is official language in 20 countries and the second most-spoken native language. Its contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other. Still, available corpora and models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. CEREAL aims at alleviating the situation by compiling documents from the Web with annotations for 24 countries of origin.</p>
-
   
 <p align="center"> <img src="img/spanish_speakers_corpus.png" width="90%" alt="Countries where Spanish is spoken and the porportion of online data" title="Countries where Spanish is spoken"> 
-  <div class="caption" width="90%">
-  <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico is taken as unit measure: countries with a larger ration documents/population appear in orange, countries with a lower ratio show the superposition of bubbles. </div>
+  <div class="caption">
+ <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico, the country with the most number of Spanish speakers, is taken as unit measure: countries with a larger ration documents/population appear in orange, countries with a lower ratio show the superposition of bubbles.</div>
 </p>
 
+## CEREAL & CEREALex {#intro}
+
+<p> CEREAL is a Spanish document-level corpus extracted from OSCAR with documents classified according to their country of origin. It covers 24 countries where Spanish is spoken. The base corpus, CEREAL&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, CEREALex, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, a document-level classifier. 
+Following OSCAR, we provide our annotations with CCO license, but we do not hold the copyright of the content text which comes from OSCAR and therefore from Common Crawl.
+</p>
 
 ## Cultural effects in CEREAL embeddings {#culture}
 
-<p> Different background culture, different lexicon and different grammatical structures present in the country-dependant textual corpora leave their imprint in semantic representations learned from them. This is evident when estimating the strength of biases (the size effect) and the performance in bilingual lexicon induction (accuracy in BLI). </p>
+<p> Different background culture, different lexicon and different grammatical structures present in the country-dependant textual corpora leave their imprint in semantic representations learned from them. In embeddings learned from a monolithic Spanish corpus, these nuances are erased. This is evident when estimating the strength of biases (the size effect) in the semantic spaces and the performance in bilingual lexicon induction (accuracy in BLI). </p>
 
-Human biases are non-pejorative indications of human preferences. Psychologists show through Implicit Association Tests (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house CA-WEAT tests and apply it to CEREAL embeddings \[1\].
+<p> Human biases are non-pejorative indications of human preferences. Psychologists show through Implicit Association Tests (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house CA-WEAT tests and apply it to CEREAL embeddings [1].
+</p>
 
 <div class="row2cols">
   <div class="column2cols left">
@@ -45,7 +50,7 @@ Spain: <br>
 <img src="img/cl_choclo10_big.png" width="25%" alt="cl"> &emsp;&emsp;
 <img src="img/es_mazorca10_big.png" width="25%" alt="es"> 
   <div class="caption">
-   <p width="90%"> <b>Figure 3.</b> The Spanish words equivalent to "corn" differ across countries and also do the neighbouring words and their relations.</p> </div>
+   <p width="90%"> <b>Figure 3.</b> The Spanish words equivalent to the English "corn" differ across countries and also do the neighbouring words and their position.</p> </div>
 </p>
 
 Induction of the VARILEX word dictionaries with VecMap on CEREAL embeddings [1]: <br>
@@ -68,10 +73,13 @@ The topology of the embedding spaces is different enough so that distances betwe
   <p align="center"><img src="img/ev_freq100_17langs_cores.png"  width="500"  alt="Dendogram with EV (100 freq) metric" title="Dendogram with EV (100 freq) metric"></p>
   </div>
   <div class="column2cols right">
-  <br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <div class="caption"> <b>Figure 5.</b> The figure shows the (visual) dendogram obtained with the scores given by the Eigenvalue similarity metric applied on every pair of varieties. According to these results, <em>voseo</em> is the strongest characteristic derived from the CEREAL word embeddings. </div>
   </div>
 </div>
+
+<br>
+<p>More examples, experiments and the technical details of the document-level classifier, measuring isomorphism between semantic spaces, and the creation and adaptation of our multi-variety resources can be found in [1,2].</p>
 
 
 ## Download the data {#data}
@@ -81,7 +89,7 @@ The topology of the embedding spaces is different enough so that distances betwe
   <tr>
     <th colspan="2"></th>
     <th colspan="2">Document Level (#docs)</th>
-    <th colspan="2">Fragment Level (#frags) </th>
+    <th colspan="2">Fragment Level (#frag) </th>
     <th colspan="2">Embeddings (vocab)</th>
   </tr>
   <tr>
@@ -108,7 +116,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ar.bz2">1,969,559</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.ar.bz2">2,713,759</a></td>
     <td>20,958,972</td>
-    <td>33,854,130</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.ar.bz2">33,854,130</a></td>
     <td>284,192</td>
     <td>532,890</td>
   </tr>
@@ -128,7 +136,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td><a href="https://zenodo.org/records/11387864/files/cereal.cl.bz2">1,115,516</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.cl.bz2">1,095,185</a></td>
     <td>12,100,443</td>
-    <td>10,077,118</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.cl.bz2">10,077,118</a></td>
     <td>199,494</td>
     <td>307,846</td>
   </tr>
@@ -188,7 +196,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td><a href="https://zenodo.org/records/11387864/files/cereal.es.bz2">5,714,316</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.es.bz2">15,689,557</a></td>
     <td>70,458,818</td>
-    <td>192,199,885</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.es.bz2">192,199,885</a></td>
     <td>596,843</td>
     <td>1,428,724</td>
   </tr>
@@ -228,7 +236,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td><a href="https://zenodo.org/records/11387864/files/cereal.mx.bz2">2,443,404</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.mx.bz2">3,314,396</a></td>
     <td>20,883,245</td>
-    <td>39,410,541</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.mx.bz2">39,410,541</a></td>
     <td>250,314</td>
     <td>489,705</td>
   </tr>
@@ -348,7 +356,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>&mdash; </td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.mix.bz2">4,866,901</a></td>
     <td>&mdash; </td>
-    <td>61,908,112</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.mix.bz2">61,908,112</a></td>
     <td>&mdash; </td>
     <td>&mdash; </td>
   </tr>
@@ -365,7 +373,38 @@ The topology of the embedding spaces is different enough so that distances betwe
 </tbody>
 </table>
 
-The table above shows the statistics (number of documents and unique sentences per language) and the Zenodo download links for CEREAL and CEREALex. The link to the word embeddings built with the sentence level corpus is also added with their vocabulary. Notice that the embeddings are estimated after cleaning the sentence level corpus which is provided only after deduplication and in alphabetical order.
+The table above shows the statistics (number of documents and unique sentences per language) and the Zenodo download links for CEREAL and CEREALex. The link to the word embeddings built with the sentence level corpus is also added with their vocabulary. Notice that the embeddings are estimated after cleaning the sentence level corpus which is provided only after deduplication and in alphabetical order without any cleaning.
+
+The table below links to the repository with the corpors used for training the 3-class, 4-class and 5-class classifier.
+
+<table id=dataTrainDownload>
+<thead>
+  <tr>
+    <th colspan="4">Training corpora (docTransformer classifier)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>3-class (es, mx, mix)</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal3C.train.bz2">train</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal3C.dev">validation</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal3C.test">test</a></td>
+  </tr>
+  <tr>
+    <td>4-class (cl, es, mx, mix)</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal4C.train.bz2">train</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal4C.dev">validation</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal4C.test">test</a></td>
+  </tr>
+  <tr>
+    <td>5-class (ar, cl, es, mx, mix)</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal5C.train.bz2">train</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal5C.dev">validation</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal5C.test">test</a></td>
+  </tr>
+</tbody>
+</table>
+
 
 ## Download the models {#models}
 
@@ -373,12 +412,20 @@ The classification models trained with our document-level classifier are hosted 
 
 The table above links to the word embedding models per country and configuration. In order to reproduce the work in \[2\], we also provide embeddings to the 24 Spanish varieties with two additional seeds ([seed 2](), [seed 3]()), and [five embedding models]() for Peninsular Spanish differing in the training data.
 
+
+## Download the additional resources {#resources}
+
+We collect [CA-WEAT1 and CA-WEAT2]() lists from volunteers in Bolivia, Colombia, Cuba, Ecuador, Mexico and Spain. These lists are used in [1] to quantify human biases in CEREAL embeddings.
+
+We adapt the VARILEX-R bilingual lexicons for English paired to 21 Spanish varieties. We provide a subset of entries both at [phrase](data/dictionaries/varilexPhrase.tar) and [word](data/dictionaries/varilexWord.tar) level. This resource is used in [1] for the bilingual lexicon induction experiments.
+
+
 ## Download the code {#code}
 
-Visit the Github repositories containing the code for the [document level classifier](https://github.com/cristinae/docTransformer), [the stylistic analysis](https://github.com/cristinae/stylometrics) and the analysis of [human biases with CA-WEAT](https://github.com/cristinae/CA-WEAT) lists.
+Visit the Github repositories containing the code for the [document level classifier](https://github.com/cristinae/docTransformer), [the stylistic analysis](https://github.com/cristinae/stylometrics) and the analysis of [human biases](https://github.com/cristinae/CA-WEAT) with CA-WEAT lists.
 
 
-## Citations {#citations}
+## Citation {#citations}
 
 Please, use the following entries when citing this research work.
 
