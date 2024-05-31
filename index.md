@@ -11,15 +11,17 @@ layout: default
   
 <p align="center"> <img src="img/spanish_speakers_corpus.png" width="90%" alt="Countries where Spanish is spoken and the porportion of online data" title="Countries where Spanish is spoken"> 
   <div class="caption">
- <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico, the country with the most number of Spanish speakers, is taken as unit measure: countries with a larger ration documents/population appear in orange, countries with a lower ratio show the superposition of bubbles.</div>
+ <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico, the country with the most number of Spanish speakers, is taken as unit measure: countries with a larger ratio documents/population appear in orange, countries with a lower ratio show the superposition of bubbles.</div>
 </p>
 
+<br>
 ## CEREAL & CEREALex {#intro}
 
-<p> CEREAL is a Spanish document-level corpus extracted from OSCAR with documents classified according to their country of origin. It covers 24 countries where Spanish is spoken. The base corpus, CEREAL&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, CEREALex, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, a document-level classifier. 
+<p> CEREAL is a Spanish document-level corpus extracted from OSCAR with documents classified according to their country of origin. It covers 24 countries where Spanish is spoken. The base corpus, CEREAL&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, CEREALex, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, our document-level classifier. 
 Following OSCAR, we provide our annotations with CCO license, but we do not hold the copyright of the content text which comes from OSCAR and therefore from Common Crawl.
 </p>
 
+<br>
 ## Cultural effects in CEREAL embeddings {#culture}
 
 <p> Different background culture, different lexicon and different grammatical structures present in the country-dependant textual corpora leave their imprint in semantic representations learned from them. In embeddings learned from a monolithic Spanish corpus, these nuances are erased. This is evident when estimating the strength of biases (the size effect) in the semantic spaces and the performance in bilingual lexicon induction (accuracy in BLI). </p>
@@ -34,7 +36,7 @@ Following OSCAR, we provide our annotations with CCO license, but we do not hold
   <img src="img/es_cctld_mx_esMX_1_sizeff.png"  width="290" title="Size effect with the Mexican CAWEAT1 lists on Mexican Spanish embeddings">
   </div>
   <div class="column2cols right">
-  <br><br><br>
+  <br><br><br><br><br><br>
    <div class="caption" width="90%"> <b>Figure 2.</b> These results for IAT1 (flowers vs insects preference) show that the bias is stronger in Spain than in Mexico. The difference might have cultural reasons behind (some insects being edible in Mexico and not in Spain for instance) and it would be diluted when considering the texts from Spain and Mexico together.</div>
   </div>
 </div>
@@ -50,7 +52,7 @@ Spain: <br>
 <img src="img/cl_choclo10_big.png" width="25%" alt="cl"> &emsp;&emsp;
 <img src="img/es_mazorca10_big.png" width="25%" alt="es"> 
   <div class="caption">
-   <p width="90%"> <b>Figure 3.</b> The Spanish words equivalent to the English "corn" differ across countries and also do the neighbouring words and their position.</p> </div>
+   <p width="90%"> <b>Figure 3.</b> t-SNE projection of the embedding spaces. The Spanish words equivalent to the English "corn" differ across countries and also do the neighbouring words and their position.</p> </div>
 </p>
 
 Induction of the VARILEX word dictionaries with VecMap on CEREAL embeddings [1]: <br>
@@ -59,7 +61,7 @@ Induction of the VARILEX word dictionaries with VecMap on CEREAL embeddings [1]:
   <p align="center"><img src="img/accsBLIbigEX_oscar.png"  width="400"  alt="Accuracy on BLI" title="Accuracy on BLI"></p>
   </div>
   <div class="column2cols right">
-  <br>
+  <br><br>
   <div class="caption">  <b>Figure 4.</b> Chosing the embedding space corresponding to the variety of the dictionary we want to induce achieves the highest accuracy, even higher than using the embeddings build with all the available data in any Spanish variety (<em>all</em>). </div>
   </div>
 </div>
@@ -82,6 +84,7 @@ The topology of the embedding spaces is different enough so that distances betwe
 <p>More examples, experiments and the technical details of the document-level classifier, measuring isomorphism between semantic spaces, and the creation and adaptation of our multi-variety resources can be found in [1,2].</p>
 
 
+<br>
 ## Download the data {#data}
 
 <table id=dataDownload>
@@ -89,8 +92,8 @@ The topology of the embedding spaces is different enough so that distances betwe
   <tr>
     <th colspan="2"></th>
     <th colspan="2">Document Level (#docs)</th>
-    <th colspan="2">Fragment Level (#frag) </th>
-    <th colspan="2">Embeddings (vocab)</th>
+    <th colspan="2">Fragment Level &emsp;(#frag) </th>
+    <th colspan="2">Embeddings &emsp;(vocab)</th>
   </tr>
   <tr>
     <th>Country</th>    <th>Code</th>
@@ -105,7 +108,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>ad</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ad.bz2">1,551</a></td>
     <td>&mdash; </td>
-    <td>13,023</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ad.bz2">13,023</a></td>
     <td>&mdash; </td>
     <td>2,672</td>
     <td>&mdash; </td>
@@ -115,7 +118,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>ar</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ar.bz2">1,969,559</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.ar.bz2">2,713,759</a></td>
-    <td>20,958,972</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ar.bz2">20,958,972</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.ar.bz2">33,854,130</a></td>
     <td>284,192</td>
     <td>532,890</td>
@@ -125,7 +128,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>bo</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.bo.bz2">74,673</a></td>
     <td>&mdash; </td>
-    <td>976,031</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.bo.bz2">976,031</a></td>
     <td>&mdash; </td>
     <td>53,800</td>
     <td>&mdash; </td>
@@ -135,7 +138,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>cl</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.cl.bz2">1,115,516</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.cl.bz2">1,095,185</a></td>
-    <td>12,100,443</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cl.bz2">12,100,443</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.cl.bz2">10,077,118</a></td>
     <td>199,494</td>
     <td>307,846</td>
@@ -145,7 +148,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>co</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.co.bz2">649,991</a></td>
     <td>&mdash; </td>
-    <td>8,331,461</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.co.bz2">8,331,461</a></td>
     <td>&mdash; </td>
     <td>163,213</td>
     <td>&mdash; </td>
@@ -155,7 +158,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>cr</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.cr.bz2">59,069</a></td>
     <td>&mdash; </td>
-    <td>826,332</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cr.bz2">826,332</a></td>
     <td>&mdash; </td>
     <td>45,894</td>
     <td>&mdash; </td>
@@ -165,7 +168,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>cu</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.cu.bz2">116,390</a></td>
     <td>&mdash; </td>
-    <td>1,921,505</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cu.bz2">1,921,505</a></td>
     <td>&mdash; </td>
     <td>82,276</td>
     <td>&mdash; </td>
@@ -175,7 +178,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>do</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.do.bz2">113,676</a></td>
     <td>&mdash; </td>
-    <td>1,184,014</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.do.bz2">1,184,014</a></td>
     <td>&mdash; </td>
     <td>52,410</td>
     <td>&mdash; </td>
@@ -185,7 +188,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>ec</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ec.bz2">157,755</a></td>
     <td>&mdash; </td>
-    <td>1,624,840</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ec.bz2">1,624,840</a></td>
     <td>&mdash; </td>
     <td>64,313</td>
     <td>&mdash; </td>
@@ -195,7 +198,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>es</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.es.bz2">5,714,316</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.es.bz2">15,689,557</a></td>
-    <td>70,458,818</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.es.bz2">70,458,818</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.es.bz2">192,199,885</a></td>
     <td>596,843</td>
     <td>1,428,724</td>
@@ -205,7 +208,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>gq</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.gq.bz2">801</a></td>
     <td>&mdash; </td>
-    <td>4,055</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.gq.bz2">4,055</a></td>
     <td>&mdash; </td>
     <td>1,699</td>
     <td>&mdash; </td>
@@ -215,7 +218,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>gt</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.gt.bz2">51,273</a></td>
     <td>&mdash; </td>
-    <td>561,899</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.gt.bz2">561,899</a></td>
     <td>&mdash; </td>
     <td>35,861</td>
     <td>&mdash; </td>
@@ -225,7 +228,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>hn</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.hn.bz2">59,662</a></td>
     <td>&mdash; </td>
-    <td>656,485</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.hn.bz2">656,485</a></td>
     <td>&mdash; </td>
     <td>35,708</td>
     <td>&mdash; </td>
@@ -235,7 +238,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>mx</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.mx.bz2">2,443,404</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.mx.bz2">3,314,396</a></td>
-    <td>20,883,245</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.mx.bz2">20,883,245</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.mx.bz2">39,410,541</a></td>
     <td>250,314</td>
     <td>489,705</td>
@@ -245,7 +248,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>ni</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ni.bz2">36,880</a></td>
     <td>&mdash; </td>
-    <td>405,986</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ni.bz2">405,986</a></td>
     <td>&mdash; </td>
     <td>31,346</td>
     <td>&mdash; </td>
@@ -255,7 +258,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>pa</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.pa.bz2">39,027</a></td>
     <td>&mdash; </td>
-    <td>449,172</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pa.bz2">449,172</a></td>
     <td>&mdash; </td>
     <td>31,269</td>
     <td>&mdash; </td>
@@ -265,7 +268,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>pe</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.pe.bz2">441,513</a></td>
     <td>&mdash; </td>
-    <td>5,069,664</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pe.bz2">5,069,664</a></td>
     <td>&mdash; </td>
     <td>122,885</td>
     <td>&mdash; </td>
@@ -285,7 +288,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>pr</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.pr.bz2">11,972</a></td>
     <td>&mdash; </td>
-    <td>128,110</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pr.bz2">128,110</a></td>
     <td>&mdash; </td>
     <td>15,063</td>
     <td>&mdash; </td>
@@ -295,7 +298,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>py</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.py.bz2">66,438</a></td>
     <td>&mdash; </td>
-    <td>775,578</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.py.bz2">775,578</a></td>
     <td>&mdash; </td>
     <td>46,514</td>
     <td>&mdash; </td>
@@ -305,7 +308,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>sv</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.sv.bz2">41,037</a></td>
     <td>&mdash; </td>
-    <td>401,553</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.sv.bz2">401,553</a></td>
     <td>&mdash; </td>
     <td>29,434</td>
     <td>&mdash; </td>
@@ -315,7 +318,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>us</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.us.bz2">21,746</a></td>
     <td>&mdash; </td>
-    <td>378,458</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.us.bz2">378,458</a></td>
     <td>&mdash; </td>
     <td>34,369</td>
     <td>&mdash; </td>
@@ -325,7 +328,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>uy</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.uy.bz2">153,713</a></td>
     <td>&mdash; </td>
-    <td>1,805,013</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.uy.bz2">1,805,013</a></td>
     <td>&mdash; </td>
     <td>75,492</td>
     <td>&mdash; </td>
@@ -335,7 +338,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>ve</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ve.bz2">109,084</a></td>
     <td>&mdash; </td>
-    <td>1,202,227</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ve.bz2">1,202,227</a></td>
     <td>&mdash; </td>
     <td>59,335</td>
     <td>&mdash; </td>
@@ -406,13 +409,14 @@ The table below links to the repository with the corpors used for training the 3
 </table>
 
 
+<br>
 ## Download the models {#models}
 
 The classification models trained with our document-level classifier are hosted by [HuggingFace](https://huggingface.co/cristinae/cereal). 
 
 The table above links to the word embedding models per country and configuration. In order to reproduce the work in \[2\], we also provide embeddings to the 24 Spanish varieties with two additional seeds ([seed 2](), [seed 3]()), and [five embedding models]() for Peninsular Spanish differing in the training data.
 
-
+<br>
 ## Download the additional resources {#resources}
 
 We collect [CA-WEAT1 and CA-WEAT2]() lists from volunteers in Bolivia, Colombia, Cuba, Ecuador, Mexico and Spain. These lists are used in [1] to quantify human biases in CEREAL embeddings.
@@ -420,11 +424,13 @@ We collect [CA-WEAT1 and CA-WEAT2]() lists from volunteers in Bolivia, Colombia,
 We adapt the VARILEX-R bilingual lexicons for English paired to 21 Spanish varieties. We provide a subset of entries both at [phrase](data/dictionaries/varilexPhrase.tar) and [word](data/dictionaries/varilexWord.tar) level. This resource is used in [1] for the bilingual lexicon induction experiments.
 
 
+<br>
 ## Download the code {#code}
 
 Visit the Github repositories containing the code for the [document level classifier](https://github.com/cristinae/docTransformer), [the stylistic analysis](https://github.com/cristinae/stylometrics) and the analysis of [human biases](https://github.com/cristinae/CA-WEAT) with CA-WEAT lists.
 
 
+<br>
 ## Citation {#citations}
 
 Please, use the following entries when citing this research work.
