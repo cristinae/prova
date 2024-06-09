@@ -110,7 +110,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td>&mdash; </td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ad.bz2">13,023</a></td>
     <td>&mdash; </td>
-    <td>2,672</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ad.vec.bz2">2,672</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ad.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
@@ -120,8 +120,8 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.ar.bz2">2,713,759</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ar.bz2">20,958,972</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.ar.bz2">33,854,130</a></td>
-    <td>284,192</td>
-    <td>532,890</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ar.vec.bz2">284,192</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ar.vec.tsne.bz2">tsne</a>]</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealExEmbeddings.ar.vec.bz2">532,890</a></td>
   </tr>
   <tr>
     <td>Bolivia</td>
@@ -141,7 +141,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cl.bz2">12,100,443</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.cl.bz2">10,077,118</a></td>
     <td>199,494</td>
-    <td>307,846</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealExEmbeddings.cl.vec.bz2">307,846</a></td>
   </tr>
   <tr>
     <td>Colombia</td>
@@ -201,7 +201,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.es.bz2">70,458,818</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.es.bz2">192,199,885</a></td>
     <td>596,843</td>
-    <td>1,428,724</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealExEmbeddings.es.vec.bz2">1,428,724</a></td>
   </tr>
   <tr>
     <td>Guinea Ecuatorial</td>
@@ -241,7 +241,7 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.mx.bz2">20,883,245</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.mx.bz2">39,410,541</a></td>
     <td>250,314</td>
-    <td>489,705</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealExEmbeddings.mx.vec.bz2">489,705</a></td>
   </tr>
   <tr>
     <td>Nicaragua</td>
@@ -414,7 +414,7 @@ The table below links to the repository with the corpors used for training the 3
 
 The classification models trained with our document-level classifier are hosted by [HuggingFace](https://huggingface.co/cristinae/cereal). 
 
-The table above links to the word embedding models per country and configuration. In order to reproduce the work in \[2\], we also provide embeddings to the 24 Spanish varieties with two additional seeds ([seed 2](), [seed 3]()), and [five embedding models]() for Peninsular Spanish differing in the training data.
+The table above links to the word embedding models per country and configuration. In order to reproduce the work in \[2\], we also provide embeddings to the 24 Spanish varieties with two additional seeds ([seed 2](https://zenodo.org/records/11390829/files/cerealEmbeddings.seed2.tar), [seed 3](https://zenodo.org/records/11390829/files/cerealEmbeddings.seed3.tar)), and five embedding models for Peninsular Spanish differing in the [training data](https://zenodo.org/records/11390829/files/cerealEmbeddings.es.5partitions.tar) or [seed](https://zenodo.org/records/11390829/files/cerealEmbeddings.es.5seeds.tar).
 
 <br>
 ## Download the additional resources {#resources}
