@@ -48,14 +48,14 @@ Lexicon might be very different in different Spanish-speaking countries. <em>Elo
 Mexico: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 Chile: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 Spain: <br>
-<img src="img/mx_elote10_big.png" width="25%" alt="mx"> &emsp;&emsp;
+<img class="imageBorder" src="img/mx_elote10_big.png" width="25%" alt="mx"> &emsp;&emsp;
 <img src="img/cl_choclo10_big.png" width="25%" alt="cl"> &emsp;&emsp;
 <img src="img/es_mazorca10_big.png" width="25%" alt="es"> 
   <div class="caption">
    <p width="90%"> <b>Figure 3.</b> t-SNE projection of the embedding spaces. The Spanish words equivalent to the English "corn" differ across countries and also do the neighbouring words and their position.</p> </div>
 </p>
 
-Induction of the VARILEX word dictionaries with VecMap on CEREAL embeddings [1]: <br>
+As example, we induce the VARILEX word dictionaries using VecMap on CEREAL embeddings [1]: <br>
 <div class="row2cols">
   <div class="column2cols left">
   <p align="center"><img src="img/accsBLIbigEX_oscar.png"  width="400"  alt="Accuracy on BLI" title="Accuracy on BLI"></p>
@@ -104,243 +104,243 @@ The topology of the embedding spaces is different enough so that distances betwe
 </thead>
 <tbody>
   <tr>
-    <td>Andorra</td>
-    <td>ad</td>
+    <td class="ressalta">Andorra</td>
+    <td class="ressalta">ad</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ad.bz2">1,551</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ad.bz2">13,023</a></td>
-    <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ad.vec.bz2">2,672</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ad.vec.tsne.bz2">tsne</a>]</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ad.bz2">13,023</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ad.vec.bz2">&emsp;2,672</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ad.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Argentina</td>
-    <td>ar</td>
+    <td class="ressalta">Argentina</td>
+    <td class="ressalta">ar</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ar.bz2">1,969,559</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.ar.bz2">2,713,759</a></td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ar.bz2">20,958,972</a></td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.ar.bz2">33,854,130</a></td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ar.bz2">20,958,972</a></td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.ar.bz2">33,854,130</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ar.vec.bz2">284,192</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ar.vec.tsne.bz2">tsne</a>]</td>
     <td><a href="https://zenodo.org/records/11390829/files/cerealExEmbeddings.ar.vec.bz2">532,890</a></td>
   </tr>
   <tr>
-    <td>Bolivia</td>
-    <td>bo</td>
+    <td class="ressalta">Bolivia</td>
+    <td class="ressalta">bo</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.bo.bz2">74,673</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.bo.bz2">976,031</a></td>
-    <td>&mdash; </td>
-    <td>53,800</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.bo.bz2">976,031</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.bo.vec.bz2">53,800</a> [<a href="models/embeddings/tsne/cerealEmbeddings.bo.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Chile</td>
-    <td>cl</td>
+    <td class="ressalta">Chile</td>
+    <td class="ressalta">cl</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.cl.bz2">1,115,516</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.cl.bz2">1,095,185</a></td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cl.bz2">12,100,443</a></td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.cl.bz2">10,077,118</a></td>
-    <td>199,494</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cl.bz2">12,100,443</a></td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.cl.bz2">10,077,118</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.cl.vec.bz2">199,494</a> [<a href="models/embeddings/tsne/cerealEmbeddings.cl.vec.tsne.bz2">tsne</a>]</td>
     <td><a href="https://zenodo.org/records/11390829/files/cerealExEmbeddings.cl.vec.bz2">307,846</a></td>
   </tr>
   <tr>
-    <td>Colombia</td>
-    <td>co</td>
+    <td class="ressalta">Colombia</td>
+    <td class="ressalta">co</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.co.bz2">649,991</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.co.bz2">8,331,461</a></td>
-    <td>&mdash; </td>
-    <td>163,213</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.co.bz2">8,331,461</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.co.vec.bz2">163,213</a> [<a href="models/embeddings/tsne/cerealEmbeddings.co.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Costa Rica</td>
-    <td>cr</td>
+    <td class="ressalta">Costa Rica</td>
+    <td class="ressalta">cr</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.cr.bz2">59,069</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cr.bz2">826,332</a></td>
-    <td>&mdash; </td>
-    <td>45,894</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cr.bz2">826,332</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.cr.vec.bz2">45,894</a> [<a href="models/embeddings/tsne/cerealEmbeddings.cr.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Cuba</td>
-    <td>cu</td>
+    <td class="ressalta">Cuba</td>
+    <td class="ressalta">cu</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.cu.bz2">116,390</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cu.bz2">1,921,505</a></td>
-    <td>&mdash; </td>
-    <td>82,276</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.cu.bz2">1,921,505</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.cu.vec.bz2">82,276</a> [<a href="models/embeddings/tsne/cerealEmbeddings.cu.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>República Dominicana</td>
-    <td>do</td>
+    <td class="ressalta">República Dominicana</td>
+    <td class="ressalta">do</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.do.bz2">113,676</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.do.bz2">1,184,014</a></td>
-    <td>&mdash; </td>
-    <td>52,410</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.do.bz2">1,184,014</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.do.vec.bz2">52,410</a> [<a href="models/embeddings/tsne/cerealEmbeddings.do.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Ecuador</td>
-    <td>ec</td>
+    <td class="ressalta">Ecuador</td>
+    <td class="ressalta">ec</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ec.bz2">157,755</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ec.bz2">1,624,840</a></td>
-    <td>&mdash; </td>
-    <td>64,313</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ec.bz2">1,624,840</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ec.vec.bz2">64,313</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ec.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>España</td>
-    <td>es</td>
+    <td class="ressalta">España</td>
+    <td class="ressalta">es</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.es.bz2">5,714,316</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.es.bz2">15,689,557</a></td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.es.bz2">70,458,818</a></td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.es.bz2">192,199,885</a></td>
-    <td>596,843</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.es.bz2">70,458,818</a></td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.es.bz2">192,199,885</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.es.vec.bz2">596,843</a> [<a href="models/embeddings/tsne/cerealEmbeddings.es.vec.tsne.bz2">tsne</a>]</td>
     <td><a href="https://zenodo.org/records/11390829/files/cerealExEmbeddings.es.vec.bz2">1,428,724</a></td>
   </tr>
   <tr>
-    <td>Guinea Ecuatorial</td>
-    <td>gq</td>
+    <td class="ressalta">Guinea Ecuatorial</td>
+    <td class="ressalta">gq</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.gq.bz2">801</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.gq.bz2">4,055</a></td>
-    <td>&mdash; </td>
-    <td>1,699</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.gq.bz2">4,055</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.gq.vec.bz2">&emsp;1,699</a> [<a href="models/embeddings/tsne/cerealEmbeddings.gq.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Guatemala</td>
-    <td>gt</td>
+    <td class="ressalta">Guatemala</td>
+    <td class="ressalta">gt</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.gt.bz2">51,273</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.gt.bz2">561,899</a></td>
-    <td>&mdash; </td>
-    <td>35,861</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.gt.bz2">561,899</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.gt.vec.bz2">35,861</a> [<a href="models/embeddings/tsne/cerealEmbeddings.gt.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Honduras</td>
-    <td>hn</td>
+    <td class="ressalta">Honduras</td>
+    <td class="ressalta">hn</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.hn.bz2">59,662</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.hn.bz2">656,485</a></td>
-    <td>&mdash; </td>
-    <td>35,708</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.hn.bz2">656,485</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.hn.vec.bz2">35,708</a> [<a href="models/embeddings/tsne/cerealEmbeddings.hn.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>México</td>
-    <td>mx</td>
+    <td class="ressalta">México</td>
+    <td class="ressalta">mx</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.mx.bz2">2,443,404</a></td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.mx.bz2">3,314,396</a></td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.mx.bz2">20,883,245</a></td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.mx.bz2">39,410,541</a></td>
-    <td>250,314</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.mx.bz2">20,883,245</a></td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.mx.bz2">39,410,541</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.mx.vec.bz2">250,314</a> [<a href="models/embeddings/tsne/cerealEmbeddings.mx.vec.tsne.bz2">tsne</a>]</td>
     <td><a href="https://zenodo.org/records/11390829/files/cerealExEmbeddings.mx.vec.bz2">489,705</a></td>
   </tr>
   <tr>
-    <td>Nicaragua</td>
-    <td>ni</td>
+    <td class="ressalta">Nicaragua</td>
+    <td class="ressalta">ni</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ni.bz2">36,880</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ni.bz2">405,986</a></td>
-    <td>&mdash; </td>
-    <td>31,346</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ni.bz2">405,986</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ni.vec.bz2">31,346</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ni.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Panamá</td>
-    <td>pa</td>
+    <td class="ressalta">Panamá</td>
+    <td class="ressalta">pa</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.pa.bz2">39,027</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pa.bz2">449,172</a></td>
-    <td>&mdash; </td>
-    <td>31,269</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pa.bz2">449,172</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.pa.vec.bz2">31,269</a> [<a href="models/embeddings/tsne/cerealEmbeddings.pa.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Perú</td>
-    <td>pe</td>
+    <td class="ressalta">Perú</td>
+    <td class="ressalta">pe</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.pe.bz2">441,513</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pe.bz2">5,069,664</a></td>
-    <td>&mdash; </td>
-    <td>122,885</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pe.bz2">5,069,664</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.pe.vec.bz2">122,885</a> [<a href="models/embeddings/tsne/cerealEmbeddings.pe.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Filipinas</td>
-    <td>ph</td>
+    <td class="ressalta">Filipinas</td>
+    <td class="ressalta">ph</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ph.bz2">109</a></td>
     <td>&mdash; </td>
-    <td>&mdash; </td>
-    <td>&mdash; </td>
-    <td>406</td>
+    <td class="ressalta">&mdash; </td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ph.vec.bz2">&emsp;&emsp;406</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ph.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Puerto Rico</td>
-    <td>pr</td>
+    <td class="ressalta">Puerto Rico</td>
+    <td class="ressalta">pr</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.pr.bz2">11,972</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pr.bz2">128,110</a></td>
-    <td>&mdash; </td>
-    <td>15,063</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.pr.bz2">128,110</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.pr.vec.bz2">15,063</a> [<a href="models/embeddings/tsne/cerealEmbeddings.pr.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Paraguay</td>
-    <td>py</td>
+    <td class="ressalta">Paraguay</td>
+    <td class="ressalta">py</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.py.bz2">66,438</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.py.bz2">775,578</a></td>
-    <td>&mdash; </td>
-    <td>46,514</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.py.bz2">775,578</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.py.vec.bz2">46,514</a> [<a href="models/embeddings/tsne/cerealEmbeddings.py.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>El Salvador</td>
-    <td>sv</td>
+    <td class="ressalta">El Salvador</td>
+    <td class="ressalta">sv</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.sv.bz2">41,037</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.sv.bz2">401,553</a></td>
-    <td>&mdash; </td>
-    <td>29,434</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.sv.bz2">401,553</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.sv.vec.bz2">29,434</a> [<a href="models/embeddings/tsne/cerealEmbeddings.sv.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>United States</td>
-    <td>us</td>
+    <td class="ressalta">United States</td>
+    <td class="ressalta">us</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.us.bz2">21,746</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.us.bz2">378,458</a></td>
-    <td>&mdash; </td>
-    <td>34,369</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.us.bz2">378,458</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.us.vec.bz2">34,369</a> [<a href="models/embeddings/tsne/cerealEmbeddings.us.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Uruguay</td>
-    <td>uy</td>
+    <td class="ressalta">Uruguay</td>
+    <td class="ressalta">uy</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.uy.bz2">153,713</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.uy.bz2">1,805,013</a></td>
-    <td>&mdash; </td>
-    <td>75,492</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.uy.bz2">1,805,013</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.uy.vec.bz2">75,492</a> [<a href="models/embeddings/tsne/cerealEmbeddings.uy.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>Venezuela</td>
-    <td>ve</td>
+    <td class="ressalta">Venezuela</td>
+    <td class="ressalta">ve</td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.ve.bz2">109,084</a></td>
     <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ve.bz2">1,202,227</a></td>
-    <td>&mdash; </td>
-    <td>59,335</td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.sentence.ve.bz2">1,202,227</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.ve.vec.bz2">59,335</a> [<a href="models/embeddings/tsne/cerealEmbeddings.ve.vec.tsne.bz2">tsne</a>]</td>
     <td>&mdash; </td>
   </tr>
   <tr>
@@ -354,23 +354,23 @@ The topology of the embedding spaces is different enough so that distances betwe
     <td></td>
   </tr>
   <tr>
-    <td>Mix</td>
-    <td>mix</td>
+    <td class="ressalta">Mix</td>
+    <td class="ressalta">mix</td>
     <td>&mdash; </td>
     <td><a href="https://zenodo.org/records/11387864/files/cereal.classified.mix.bz2">4,866,901</a></td>
-    <td>&mdash; </td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.mix.bz2">61,908,112</a></td>
+    <td class="ressalta">&mdash; </td>
+    <td class="ressalta"><a href="https://zenodo.org/records/11390829/files/cereal.classified.sentence.mix.bz2">61,908,112</a></td>
     <td>&mdash; </td>
     <td>&mdash; </td>
   </tr>
   <tr>
-    <td>All</td>
-    <td>all</td>
+    <td class="ressalta">All</td>
+    <td class="ressalta">all</td>
     <td>13,449,155</td>
     <td>27,679,798</td>
-    <td>151,116,884</td>
-    <td>337,449,786</td>
-    <td>736,896</td>
+    <td class="ressalta">151,116,884</td>
+    <td class="ressalta">337,449,786</td>
+    <td><a href="https://zenodo.org/records/11390829/files/cerealEmbeddings.all.vec.bz2">736,896</a></td>
     <td>&mdash; </td>
   </tr>
 </tbody>
@@ -388,19 +388,19 @@ The table below links to the repository with the corpors used for training the 3
 </thead>
 <tbody>
   <tr>
-    <td>3-class (es, mx, mix)</td>
+    <td class="ressalta">3-class (es, mx, mix)</td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal3C.train.bz2">train</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal3C.dev">validation</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal3C.test">test</a></td>
   </tr>
   <tr>
-    <td>4-class (cl, es, mx, mix)</td>
+    <td class="ressalta">4-class (cl, es, mx, mix)</td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal4C.train.bz2">train</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal4C.dev">validation</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal4C.test">test</a></td>
   </tr>
   <tr>
-    <td>5-class (ar, cl, es, mx, mix)</td>
+    <td class="ressalta">5-class (ar, cl, es, mx, mix)</td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal5C.train.bz2">train</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal5C.dev">validation</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal5C.test">test</a></td>

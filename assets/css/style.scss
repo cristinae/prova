@@ -66,7 +66,10 @@ td:nth-child(1) {
 td:nth-child(2) {
   text-align: center;
  }
- 
+.ressalta {
+  background-color: #fafde5; /*greenish*/
+  background-color: #fefde8;
+} 
 .column2cols {
   float: left;
 }
@@ -91,6 +94,10 @@ img {
   height: auto;
   border: 0px solid #555;
   margin-top: 20px;
+}
+.imageBorder {
+  border-width: 20px;
+  border-color: Black; 
 }
 
 .caption {
