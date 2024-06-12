@@ -7,18 +7,18 @@ layout: default
 
 # Elote, Choclo and Mazorca: on the Varieties of Spanish
 
-<p>Spanish is one of the most widespread languages in the world: it is official language in 20 countries and the second most-spoken native language. Its contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other. Still, available corpora and models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. CEREAL aims at alleviating the situation by compiling documents from the Web with annotations for 24 countries of origin.</p>
+<p>Spanish is one of the most widespread languages in the world: it is an [official language in 20 countries](https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Spanish_is_an_official_language) and the [second most-spoken native language](https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers). Its contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other at different extents. Still, available corpora, and the models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. CEREAL aims at alleviating the situation by making available documents from the Web with annotations for 24 countries of origin.</p>
   
 <p align="center"> <img src="img/spanish_speakers_corpus.png" width="90%" alt="Countries where Spanish is spoken and the porportion of online data" title="Countries where Spanish is spoken"> 
   <div class="caption">
- <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico, the country with the most number of Spanish speakers, is taken as unit measure: countries with a larger ratio documents/population appear in orange, countries with a lower ratio show the superposition of bubbles.</div>
+ <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico, the [country with the highest number of Spanish speakers](https://www.statista.com/statistics/991020/number-native-spanish-speakers-country-worldwide/), is taken as unit measure: countries with a larger ratio documents/population appear in orange, countries with a lower ratio show the superposition of bubbles.</div>
 </p>
 
 <br>
 ## CEREAL & CEREALex {#intro}
 
-<p> CEREAL is a Spanish document-level corpus extracted from OSCAR with documents classified according to their country of origin. It covers 24 countries where Spanish is spoken. The base corpus, CEREAL&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, CEREALex, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, our document-level classifier. 
-Following OSCAR, we provide our annotations with CCO license, but we do not hold the copyright of the content text which comes from OSCAR and therefore from Common Crawl.
+<p> CEREAL is a Spanish document-level corpus extracted from [OSCAR](https://oscar-project.org) with documents classified according to their country of origin. It covers 24 countries where Spanish is widely spoken. The base corpus, **CEREAL**&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, **CEREALex**, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, our document-level classifier. 
+Following OSCAR, we provide our annotations with [CCO license](https://creativecommons.org/public-domain/cc0/), but we do not hold the copyright of the content text which comes from [OSCAR](https://oscar-project.org/#license) and therefore from [Common Crawl](https://commoncrawl.org).
 </p>
 
 <br>
@@ -26,7 +26,8 @@ Following OSCAR, we provide our annotations with CCO license, but we do not hold
 
 <p> Different background culture, different lexicon and different grammatical structures present in the country-dependant textual corpora leave their imprint in semantic representations learned from them. In embeddings learned from a monolithic Spanish corpus, these nuances are erased. This is evident when estimating the strength of biases (the size effect) in the semantic spaces and the performance in bilingual lexicon induction (accuracy in BLI). </p>
 
-<p> Human biases are non-pejorative indications of human preferences. Psychologists show through Implicit Association Tests (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house CA-WEAT tests and apply it to CEREAL embeddings [1].
+<p> Human biases are non-pejorative indications of human preferences. Psychologists show through [Implicit Association Tests](https://en.wikipedia.org/wiki/Implicit-association_test) (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house [CA-WEAT tests](https://aclanthology.org/2022.emnlp-main.133/) and apply it to CEREAL embeddings [\[1\]](https://cristinae.github.io/prova/#citations). 
+As the example in Figure 2 shows, there is indeed a difference in the preferences which are rooted in culture. 
 </p>
 
 <div class="row2cols">
@@ -42,7 +43,7 @@ Following OSCAR, we provide our annotations with CCO license, but we do not hold
 </div>
 
 <br>
-Lexicon might be very different in different Spanish-speaking countries. <em>Elote</em>, <em>choclo</em> and <em>mazorca</em>  all mean "corn" in different regions. The word itself has a different usage, being much more frequent in America than in Europe. This behaviour makes the topology of the embedding spaces different \[2\] and therefore relevant for NLP tasks such as bilingual lexicon induction \[1\].
+Lexicon might have big differences in different Spanish-speaking countries. For instance, <em>elote</em>, <em>choclo</em> and <em>mazorca</em>  all mean "corn" in different regions. The word itself has a different usage, being much more frequent in America than in Europe. As Figure 3 shows, in the Mexican embedding space elote appears close to dishes where it is an essential ingredient (e.g., tamales and esquites) but also close to other vegetables (e.g., chiles and calabaza). In the Chilean embedding space, choclo appears surrounded by other vegetables only. This behaviour makes the topology of the embedding spaces different \[2\] and therefore relevant for NLP tasks such as bilingual lexicon induction \[1\].
 
 <p align="center"> 
 Mexico: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
@@ -62,7 +63,7 @@ As example, we induce the VARILEX word dictionaries using VecMap on CEREAL embed
   </div>
   <div class="column2cols right">
   <br><br>
-  <div class="caption">  <b>Figure 4.</b> Chosing the embedding space corresponding to the variety of the dictionary we want to induce achieves the highest accuracy, even higher than using the embeddings build with all the available data in any Spanish variety (<em>all</em>). </div>
+  <div class="caption">  <b>Figure 4.</b> Chosing the embedding space corresponding to the variety of the dictionary we want to induce achieves the highest accuracy, even higher than using the embeddings built with all the available data in any Spanish variety (<em>all</em>). </div>
   </div>
 </div>
 
@@ -86,6 +87,10 @@ The topology of the embedding spaces is different enough so that distances betwe
 
 <br>
 ## Download the data {#data}
+
+The table shows the statistics (number of documents and unique sentences per language) for CEREAL and CEREALex. 
+All country-specific datasets are [available through  Zenodo](https://zenodo.org/records/11387864/). Click on the red numbers to download the collections for different language varieties at the document and the sentence level.
+The link to the word embeddings built with the sentence-level corpora is also added with their vocabulary. Notice that the embeddings are estimated after cleaning the sentence-level corpus which is provided only after deduplication and in alphabetical order without any cleaning.
 
 <table id=dataDownload>
 <thead>
@@ -376,9 +381,8 @@ The topology of the embedding spaces is different enough so that distances betwe
 </tbody>
 </table>
 
-The table above shows the statistics (number of documents and unique sentences per language) and the Zenodo download links for CEREAL and CEREALex. The link to the word embeddings built with the sentence level corpus is also added with their vocabulary. Notice that the embeddings are estimated after cleaning the sentence level corpus which is provided only after deduplication and in alphabetical order without any cleaning.
 
-The table below links to the repository with the corpors used for training the 3-class, 4-class and 5-class classifier.
+Those interested in replicating our experiments and resulting models to produce CEREALex can download the corpora used for training the 3-class, 4-class and 5-class classifier.
 
 <table id=dataTrainDownload>
 <thead>
@@ -389,19 +393,19 @@ The table below links to the repository with the corpors used for training the 3
 <tbody>
   <tr>
     <td class="ressalta">3-class (es, mx, mix)</td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal3C.train.bz2">train</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal3C.train.bz2">training</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal3C.dev">validation</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal3C.test">test</a></td>
   </tr>
   <tr>
     <td class="ressalta">4-class (cl, es, mx, mix)</td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal4C.train.bz2">train</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal4C.train.bz2">training</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal4C.dev">validation</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal4C.test">test</a></td>
   </tr>
   <tr>
     <td class="ressalta">5-class (ar, cl, es, mx, mix)</td>
-    <td><a href="https://zenodo.org/records/11390829/files/cereal5C.train.bz2">train</a></td>
+    <td><a href="https://zenodo.org/records/11390829/files/cereal5C.train.bz2">training</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal5C.dev">validation</a></td>
     <td><a href="https://zenodo.org/records/11390829/files/cereal5C.test">test</a></td>
   </tr>
@@ -421,7 +425,7 @@ The table above links to the word embedding models per country and configuration
 
 We collect [CA-WEAT1 and CA-WEAT2]() lists from volunteers in Bolivia, Colombia, Cuba, Ecuador, Mexico and Spain. These lists are used in [1] to quantify human biases in CEREAL embeddings.
 
-We adapt the VARILEX-R bilingual lexicons for English paired to 21 Spanish varieties. We provide a subset of entries both at [phrase](data/dictionaries/varilexPhrase.tar) and [word](data/dictionaries/varilexWord.tar) level. This resource is used in [1] for the bilingual lexicon induction experiments.
+We adapt the [VARILEX-R bilingual lexicons](https://h-ueda.sakura.ne.jp/varilex-r/) for English paired to 21 Spanish varieties. We provide a subset of entries both at the [phrase](data/dictionaries/varilexPhrase.tar) and at the [word](data/dictionaries/varilexWord.tar) level. This resource is used in [1] for the bilingual lexicon induction experiments.
 
 
 <br>
