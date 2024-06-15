@@ -26,7 +26,7 @@ Following OSCAR, we provide our annotations with <a href="https://creativecommon
 
 <p> Different background culture, different lexicon and different grammatical structures present in the country-dependant textual corpora leave their imprint in semantic representations learned from them. In embeddings learned from a monolithic Spanish corpus, these nuances are erased. This is evident when estimating the strength of biases (the size effect) in the semantic spaces and the performance in bilingual lexicon induction (accuracy in BLI). </p>
 
-<p> Human biases are non-pejorative indications of human preferences. Psychologists show through <a href="https://en.wikipedia.org/wiki/Implicit-association_test">Implicit Association Tests</a> (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house <a href="https://aclanthology.org/2022.emnlp-main.133/">CA-WEAT tests</a> and apply it to CEREAL embeddings [\[1\]](https://cristinae.github.io/prova/#citations). 
+<p> Human biases are non-pejorative indications of human preferences. Psychologists show through <a href="https://en.wikipedia.org/wiki/Implicit-association_test">Implicit Association Tests</a> (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house <a href="https://aclanthology.org/2022.emnlp-main.133/">CA-WEAT tests</a> and apply it to CEREAL embeddings <a href="#citations">\[1\]. 
 As the example in Figure 2 shows, there is indeed a difference in the preferences which are rooted in culture. 
 </p>
 
@@ -89,7 +89,7 @@ The topology of the embedding spaces is different enough so that distances betwe
 ## Download the data {#data}
 
 The table shows the statistics (number of documents and unique sentences per language) for CEREAL and CEREALex. 
-All country-specific datasets are [available through  Zenodo](https://zenodo.org/records/11387864/). Click on the red numbers to download the collections for different language varieties at the document and the sentence level.
+All country-specific datasets are <a href="https://zenodo.org/records/11387864/">available through  Zenodo</a>. Click on the red numbers to download the collections for different language varieties at the document and the sentence level.
 The link to the word embeddings built with the sentence-level corpora is also added with their vocabulary. Notice that the embeddings are estimated after cleaning the sentence-level corpus which is provided only after deduplication and in alphabetical order without any cleaning.
 
 <table id=dataDownload>
@@ -416,7 +416,7 @@ Those interested in replicating our experiments and resulting models to produce 
 <br>
 ## Download the models {#models}
 
-The classification models trained with our document-level classifier are hosted by [HuggingFace](https://huggingface.co/cristinae/cereal). 
+The classification models trained with our document-level classifier are hosted by <a href="https://huggingface.co/cristinae/cereal">HuggingFace</a>. 
 
 The table above links to the word embedding models per country and configuration. In order to reproduce the work in \[2\], we also provide embeddings to the 24 Spanish varieties with two additional seeds ([seed 2](https://zenodo.org/records/11390829/files/cerealEmbeddings.seed2.tar), [seed 3](https://zenodo.org/records/11390829/files/cerealEmbeddings.seed3.tar)), and five embedding models for Peninsular Spanish differing in the [training data](https://zenodo.org/records/11390829/files/cerealEmbeddings.es.5partitions.tar) or [seed](https://zenodo.org/records/11390829/files/cerealEmbeddings.es.5seeds.tar).
 
