@@ -7,18 +7,18 @@ layout: default
 
 # Elote, Choclo and Mazorca: on the Varieties of Spanish
 
-<p>Spanish is one of the most widespread languages in the world: it is an [official language in 20 countries](https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Spanish_is_an_official_language) and the [second most-spoken native language](https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers). Its contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other at different extents. Still, available corpora, and the models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. CEREAL aims at alleviating the situation by making available documents from the Web with annotations for 24 countries of origin.</p>
+<p>Spanish is one of the most widespread languages in the world: it is an <a href="https://en.wikipedia.org/wiki/List_of_countries_and_territories_where_Spanish_is_an_official_language">official language in 20 countries</a> and the <a href="https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers">second most-spoken native language</a>. Its contact with different coexistent languages and the rich regional and cultural diversity has produced varieties which divert from each other at different extents. Still, available corpora, and the models trained upon them, generally treat Spanish as one monolithic language, which dampers prediction and generation power when dealing with different varieties. CEREAL aims at alleviating the situation by making available documents from the Web with annotations for 24 countries of origin.</p>
   
 <p align="center"> <img src="img/spanish_speakers_corpus.png" width="90%" alt="Countries where Spanish is spoken and the porportion of online data" title="Countries where Spanish is spoken"> 
   <div class="caption">
- <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico, the [country with the highest number of Spanish speakers](https://www.statista.com/statistics/991020/number-native-spanish-speakers-country-worldwide/), is taken as unit measure: countries with a larger ratio documents/population appear in orange, countries with a lower ratio show the superposition of bubbles.</div>
+ <b>Figure 1.</b> Countries where Spanish is spoken. Orange bubbles represent the proportion of documents in CEREAL, while color bubbles represent the population in the country. Mexico, the <a href="https://www.statista.com/statistics/991020/number-native-spanish-speakers-country-worldwide/">country with the highest number of Spanish speakers</a>, is taken as unit measure: countries with a larger ratio documents/population appear in orange, countries with a lower ratio show the superposition of bubbles.</div>
 </p>
 
 <br>
 ## CEREAL & CEREALex {#intro}
 
-<p> CEREAL is a Spanish document-level corpus extracted from [OSCAR](https://oscar-project.org) with documents classified according to their country of origin. It covers 24 countries where Spanish is widely spoken. The base corpus, **CEREAL**&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, **CEREALex**, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, our document-level classifier. 
-Following OSCAR, we provide our annotations with [CCO license](https://creativecommons.org/public-domain/cc0/), but we do not hold the copyright of the content text which comes from [OSCAR](https://oscar-project.org/#license) and therefore from [Common Crawl](https://commoncrawl.org).
+<p> CEREAL is a Spanish document-level corpus extracted from <a href="https://oscar-project.org">OSCAR</a> with documents classified according to their country of origin. It covers 24 countries where Spanish is widely spoken. The base corpus, **CEREAL**&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, **CEREALex**, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, our document-level classifier. 
+Following OSCAR, we provide our annotations with <a href="https://creativecommons.org/public-domain/cc0/">CCO license</a>, but we do not hold the copyright of the content text which comes from <a href="https://oscar-project.org/#license">OSCAR</a> and therefore from <a href="https://commoncrawl.org">Common Crawl</a>.
 </p>
 
 <br>
@@ -26,7 +26,7 @@ Following OSCAR, we provide our annotations with [CCO license](https://creativec
 
 <p> Different background culture, different lexicon and different grammatical structures present in the country-dependant textual corpora leave their imprint in semantic representations learned from them. In embeddings learned from a monolithic Spanish corpus, these nuances are erased. This is evident when estimating the strength of biases (the size effect) in the semantic spaces and the performance in bilingual lexicon induction (accuracy in BLI). </p>
 
-<p> Human biases are non-pejorative indications of human preferences. Psychologists show through [Implicit Association Tests](https://en.wikipedia.org/wiki/Implicit-association_test) (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house [CA-WEAT tests](https://aclanthology.org/2022.emnlp-main.133/) and apply it to CEREAL embeddings [\[1\]](https://cristinae.github.io/prova/#citations). 
+<p> Human biases are non-pejorative indications of human preferences. Psychologists show through <a href="https://en.wikipedia.org/wiki/Implicit-association_test">Implicit Association Tests</a> (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house <a href="https://aclanthology.org/2022.emnlp-main.133/">CA-WEAT tests</a> and apply it to CEREAL embeddings <a href="#citations">\[1\]. 
 As the example in Figure 2 shows, there is indeed a difference in the preferences which are rooted in culture. 
 </p>
 
@@ -89,7 +89,7 @@ The topology of the embedding spaces is different enough so that distances betwe
 ## Download the data {#data}
 
 The table shows the statistics (number of documents and unique sentences per language) for CEREAL and CEREALex. 
-All country-specific datasets are [available through  Zenodo](https://zenodo.org/records/11387864/). Click on the red numbers to download the collections for different language varieties at the document and the sentence level.
+All country-specific datasets are <a href="https://zenodo.org/records/11387864/">available through  Zenodo</a>. Click on the red numbers to download the collections for different language varieties at the document and the sentence level.
 The link to the word embeddings built with the sentence-level corpora is also added with their vocabulary. Notice that the embeddings are estimated after cleaning the sentence-level corpus which is provided only after deduplication and in alphabetical order without any cleaning.
 
 <table id=dataDownload>
@@ -416,7 +416,7 @@ Those interested in replicating our experiments and resulting models to produce 
 <br>
 ## Download the models {#models}
 
-The classification models trained with our document-level classifier are hosted by [HuggingFace](https://huggingface.co/cristinae/cereal). 
+The classification models trained with our document-level classifier are hosted by <a href="https://huggingface.co/cristinae/cereal">HuggingFace</a>. 
 
 The table above links to the word embedding models per country and configuration. In order to reproduce the work in \[2\], we also provide embeddings to the 24 Spanish varieties with two additional seeds ([seed 2](https://zenodo.org/records/11390829/files/cerealEmbeddings.seed2.tar), [seed 3](https://zenodo.org/records/11390829/files/cerealEmbeddings.seed3.tar)), and five embedding models for Peninsular Spanish differing in the [training data](https://zenodo.org/records/11390829/files/cerealEmbeddings.es.5partitions.tar) or [seed](https://zenodo.org/records/11390829/files/cerealEmbeddings.es.5seeds.tar).
 
