@@ -17,7 +17,7 @@ layout: default
 <br>
 ## CEREAL & CEREALex {#intro}
 
-<p> CEREAL is a Spanish document-level corpus extracted from <a href="https://oscar-project.org">OSCAR</a> with documents classified according to their country of origin. It covers 24 countries where Spanish is widely spoken. The base corpus, **CEREAL**&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, **CEREALex**, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, our document-level classifier. 
+<p> CEREAL is a Spanish document-level corpus extracted from <a href="https://oscar-project.org">OSCAR</a> with documents classified according to their country of origin. It covers 24 countries where Spanish is widely spoken. The base corpus, <strong>CEREAL</strong>&ndash;Corpus del Español REAL, contains 13.5 million documents with gold annotations, where the country of origin has been extracted from the information available in the URL of the document. The extended corpus, <strong>CEREALex</strong>, contains 28 million of additional documents with silver annotations, where the country of origin has been automatically assigned using docTransformer, our document-level classifier. 
 Following OSCAR, we provide our annotations with <a href="https://creativecommons.org/public-domain/cc0/">CCO license</a>, but we do not hold the copyright of the content text which comes from <a href="https://oscar-project.org/#license">OSCAR</a> and therefore from <a href="https://commoncrawl.org">Common Crawl</a>.
 </p>
 
@@ -26,7 +26,7 @@ Following OSCAR, we provide our annotations with <a href="https://creativecommon
 
 <p> Different background culture, different lexicon and different grammatical structures present in the country-dependant textual corpora leave their imprint in semantic representations learned from them. In embeddings learned from a monolithic Spanish corpus, these nuances are erased. This is evident when estimating the strength of biases (the size effect) in the semantic spaces and the performance in bilingual lexicon induction (accuracy in BLI). </p>
 
-<p> Human biases are non-pejorative indications of human preferences. Psychologists show through <a href="https://en.wikipedia.org/wiki/Implicit-association_test">Implicit Association Tests</a> (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house <a href="https://aclanthology.org/2022.emnlp-main.133/">CA-WEAT tests</a> and apply it to CEREAL embeddings <a href="#citations">\[1\]. 
+<p> Human biases are non-pejorative indications of human preferences. Psychologists show through <a href="https://en.wikipedia.org/wiki/Implicit-association_test">Implicit Association Tests</a> (IAT) that humans have positive biases towards flowers (vs insects) and musical instruments (vs weapons) for example. We extend this analysis to word embeddings through our in-house <a href="https://aclanthology.org/2022.emnlp-main.133/">CA-WEAT tests</a> and apply it to CEREAL embeddings <a href="#citations">[1]</a>. 
 As the example in Figure 2 shows, there is indeed a difference in the preferences which are rooted in culture. 
 </p>
 
